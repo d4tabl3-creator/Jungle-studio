@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jungle Studio El Pitillal | Estudio en renta</title>
+<meta name="description" content="Estudio amueblado con terraza, cocina e internet en El Pitillal, Puerto Vallarta. Renta mensual de $7,000 MXN.">
+<meta property="og:title" content="Jungle Studio El Pitillal">
+<meta property="og:description" content="Un refugio bohemio amueblado con terraza en Puerto Vallarta.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://renta.oralewow.com/">
+<meta property="og:image" content="https://renta.oralewow.com/terraza-portada.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://renta.oralewow.com/terraza-portada.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --r:.35rem;
+  --bg:oklch(.985 .007 102);--fg:oklch(.225 .034 145);--surface:oklch(.954 .018 103);
+  --primary:oklch(.35 .075 145);--primary-fg:oklch(.98 .008 103);--primary-soft:oklch(.81 .085 125);
+  --primary-muted:oklch(.86 .028 128);--primary-line:oklch(.48 .065 145);
+  --secondary:oklch(.925 .028 102);--muted:oklch(.94 .02 106);--muted-fg:oklch(.46 .028 120);
+  --accent:oklch(.78 .105 96);--accent-fg:oklch(.22 .038 140);--border:oklch(.85 .025 105);--ring:oklch(.42 .08 145);
+  --hero-fg:oklch(.99 .005 103);--hero-muted:oklch(.91 .017 103);--hero-accent:oklch(.85 .105 105);
+  --hero-line:oklch(1 0 0 / .26);--hero-wash:oklch(.2 .04 145 / .28);--hero-mobile:oklch(.22 .045 145 / .96);--hero-contrast:oklch(.25 .035 145);
+  --hero-overlay:linear-gradient(90deg,oklch(.15 .045 145 / .82) 0%,oklch(.18 .04 145 / .52) 52%,oklch(.18 .03 145 / .12) 100%),linear-gradient(0deg,oklch(.13 .035 145 / .58),transparent 55%);
+  --location-overlay:linear-gradient(90deg,oklch(.14 .04 145 / .88),oklch(.15 .035 145 / .5));
+  --ctrl:oklch(.99 .005 103 / .9);--ctrl-fg:oklch(.2 .04 145);--lightbox:oklch(.1 .02 145 / .94);
+  --shadow-soft:0 14px 34px oklch(.12 .03 145 / .18);--shadow-photo:0 24px 70px oklch(0 0 0 / .4);
+  --display:"Cormorant Garamond",Georgia,serif;--body:"Manrope",system-ui,sans-serif;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--body);line-height:1.5;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer;padding:0}
+a,button{-webkit-tap-highlight-color:transparent}
+:focus-visible{outline:2px solid var(--ring);outline-offset:3px}
+h1,h2,h3,p{margin:0}
+.ic{width:1.5rem;height:1.5rem;flex-shrink:0}
+.wrap{max-width:80rem;margin:0 auto;padding:0 1.25rem}
+@media(min-width:640px){.wrap{padding:0 2rem}}
+@media(min-width:1024px){.wrap{padding:0 3rem}}
+.eyebrow{color:var(--primary);font-size:.72rem;line-height:1rem;font-weight:800;text-transform:uppercase;letter-spacing:.2em}
+.display{font-family:var(--display);font-weight:500}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.75rem;border-radius:999px;font-weight:700;font-size:.875rem;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn .ic{width:1rem;height:1rem}
+
+/* Header */
+header{position:absolute;inset:0 0 auto 0;z-index:40;border-bottom:1px solid var(--hero-line);background:var(--hero-wash);color:var(--hero-fg);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.hbar{height:5rem;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1rem}
+.brand{display:flex;align-items:center;gap:.75rem;min-width:0}
+.brand-mark{width:2.25rem;height:2.25rem;display:grid;place-items:center;border-radius:999px;border:1px solid var(--hero-line);background:var(--hero-wash)}
+.brand-mark .ic{width:1.25rem;height:1.25rem}
+.brand-name{font-family:var(--display);font-size:1.125rem;line-height:1}
+.brand-name small{display:block;padding-top:.25rem;font-family:var(--body);font-size:10px;text-transform:uppercase;letter-spacing:.24em;opacity:.75}
+.nav{display:none;align-items:center;gap:2rem;font-size:.875rem;font-weight:500}
+.nav a:not(.btn){transition:opacity .2s}.nav a:not(.btn):hover{opacity:.65}
+.nav .btn{background:var(--hero-fg);color:var(--hero-contrast);padding:.625rem 1.25rem;font-weight:500}
+.menu-btn{width:2.5rem;height:2.5rem;display:grid;place-items:center;border-radius:999px;border:1px solid var(--hero-line)}
+.menu-btn .ic{width:1.25rem;height:1.25rem}
+.menu-btn .i-x{display:none}.menu-btn[aria-expanded="true"] .i-x{display:block}.menu-btn[aria-expanded="true"] .i-menu{display:none}
+.mnav{display:none;gap:.25rem;border-top:1px solid var(--hero-line);background:var(--hero-mobile);padding:1rem 1.25rem}
+.mnav.open{display:grid}
+.mnav a{border-radius:var(--r);padding:.75rem 1rem;font-weight:500}
+.mnav a:hover{background:var(--hero-wash)}
+@media(min-width:768px){.nav{display:flex}.menu-btn,.mnav,.mnav.open{display:none}}
+
+/* Hero */
+.hero{position:relative;display:flex;align-items:flex-end;min-height:92svh;overflow:hidden}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:var(--hero-overlay)}
+.hero-in{position:relative;z-index:1;width:100%;padding-top:8rem;padding-bottom:4rem;color:var(--hero-fg)}
+.loc{display:flex;align-items:center;gap:.5rem;margin-bottom:1.25rem;font-size:.75rem;font-weight:600;text-transform:uppercase;letter-spacing:.22em}
+.loc .ic{width:1rem;height:1rem}
+.hero h1{max-width:56rem;font-family:var(--display);font-weight:500;font-size:3rem;line-height:.98}
+.hero h1 em{font-weight:400;color:var(--hero-accent)}
+.hero-row{margin-top:1.75rem;max-width:48rem;display:flex;flex-direction:column;align-items:flex-start;gap:1.75rem;border-top:1px solid var(--hero-line);padding-top:1.5rem}
+.hero-row p{max-width:36rem;font-size:1rem;line-height:1.625;color:var(--hero-muted)}
+.hero-row .btn{flex-shrink:0;background:var(--accent);color:var(--accent-fg);padding:.875rem 1.5rem;box-shadow:var(--shadow-soft)}
+@media(min-width:640px){.hero h1{font-size:3.75rem}.hero-in{padding-bottom:5rem}.hero-row{flex-direction:row;align-items:flex-end;justify-content:space-between}.hero-row p{font-size:1.125rem}}
+@media(min-width:1024px){.hero h1{font-size:6rem}.hero-in{padding-bottom:6rem}}
+
+/* Sections */
+.sec{padding:5rem 0}
+@media(min-width:640px){.sec{padding:7rem 0}}
+.surface{background:var(--surface)}
+.h2{margin-top:1rem;font-family:var(--display);font-weight:500;font-size:2.25rem;line-height:1.15}
+@media(min-width:640px){.h2{font-size:3rem}}
+.lead{margin-top:1.5rem;max-width:36rem;font-size:1rem;line-height:2rem;color:var(--muted-fg)}
+
+.space-grid{display:grid;gap:3rem}
+@media(min-width:1024px){.space-grid{grid-template-columns:.9fr 1.1fr;gap:5rem}}
+.price-inline{margin-top:2rem;display:inline-flex;align-items:baseline;gap:.5rem;border-bottom:1px solid oklch(.35 .075 145 / .3);padding-bottom:.75rem}
+.price-inline b{font-family:var(--display);font-weight:500;font-size:2.25rem;color:var(--primary)}
+.price-inline span{font-size:.875rem;color:var(--muted-fg)}
+.feats{display:grid;gap:1px;overflow:hidden;border-radius:var(--r);border:1px solid var(--border);background:var(--border)}
+@media(min-width:640px){.feats{grid-template-columns:1fr 1fr}}
+.feat{background:var(--bg);padding:1.75rem}
+@media(min-width:640px){.feat{padding:2rem}}
+.feat .ic{color:var(--primary)}
+.feat h3{margin-top:2rem;font-family:var(--display);font-weight:500;font-size:1.5rem}
+.feat p{margin-top:.75rem;font-size:.875rem;line-height:1.5rem;color:var(--muted-fg)}
+
+/* Gallery */
+.gal-head{margin-bottom:2.5rem;display:flex;flex-direction:column;gap:1rem}
+.gal-head em{font-weight:400;color:var(--primary)}
+.gal-head>p{max-width:24rem;font-size:.875rem;line-height:1.5rem;color:var(--muted-fg)}
+@media(min-width:640px){.gal-head{flex-direction:row;align-items:flex-end;justify-content:space-between}}
+.gallery{display:grid;grid-template-columns:repeat(2,1fr);grid-auto-rows:220px;gap:.5rem}
+@media(min-width:640px){.gallery{grid-template-columns:repeat(3,1fr);grid-auto-rows:280px}}
+@media(min-width:1024px){.gallery{grid-template-columns:repeat(4,1fr)}}
+.tile{position:relative;overflow:hidden;border-radius:calc(var(--r) - 3px);background:var(--muted)}
+.tile.wide{grid-column:span 2}
+.tile.big{grid-column:span 2;grid-row:span 2}
+.tile img{width:100%;height:100%;object-fit:cover;transition:transform .7s}
+.tile:hover img{transform:scale(1.03)}
+.tile-hover{position:absolute;inset:0;background:oklch(.15 .035 145 / .18);opacity:0;transition:opacity .3s}
+.tile-btn{position:absolute;right:.75rem;bottom:.75rem;width:2.25rem;height:2.25rem;display:grid;place-items:center;border-radius:999px;background:var(--ctrl);color:var(--ctrl-fg);opacity:0;transition:opacity .3s}
+.tile-btn .ic{width:1rem;height:1rem}
+.tile:hover .tile-hover,.tile:hover .tile-btn,.tile:focus-visible .tile-btn{opacity:1}
+
+/* Amenities */
+.amen{background:var(--primary);color:var(--primary-fg);padding:5rem 0}
+@media(min-width:640px){.amen{padding:6rem 0}}
+.amen .kicker{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--primary-soft)}
+.ams{margin-top:3rem;display:grid;gap:1px;overflow:hidden;border-radius:var(--r);border:1px solid var(--primary-line);background:var(--primary-line)}
+@media(min-width:640px){.ams{grid-template-columns:1fr 1fr}}
+@media(min-width:1024px){.ams{grid-template-columns:repeat(3,1fr)}}
+.am{background:var(--primary);padding:1.5rem}
+@media(min-width:640px){.am{padding:1.75rem}}
+.am .ic{color:var(--primary-soft)}
+.am h3{margin-top:1.5rem;font-size:1rem;font-weight:600}
+.am p{margin-top:.25rem;font-size:.875rem;color:var(--primary-muted)}
+
+/* Details */
+.details{display:grid;overflow:hidden;border-radius:var(--r);border:1px solid var(--border);background:var(--bg)}
+@media(min-width:1024px){.details{grid-template-columns:.8fr 1.2fr}}
+.d-left{display:flex;flex-direction:column;justify-content:space-between;background:var(--secondary);padding:2rem}
+.d-right{padding:2rem}
+@media(min-width:640px){.d-left,.d-right{padding:3rem}}
+.big-price{margin-top:1.25rem;font-family:var(--display);font-weight:500;font-size:3.75rem;line-height:1;color:var(--primary)}
+@media(min-width:640px){.big-price{font-size:4.5rem}}
+.small-muted{margin-top:.5rem;font-size:.875rem;color:var(--muted-fg)}
+.incl{margin-top:3rem;border-top:1px solid var(--border);padding-top:1.5rem}
+.incl p{font-size:.875rem;font-weight:600}
+.incl ul{margin:.5rem 0 0;padding-left:1rem;font-size:.875rem;line-height:1.5rem;color:var(--muted-fg)}
+.d-right .h2{font-size:1.875rem}
+@media(min-width:640px){.d-right .h2{font-size:2.25rem}}
+.reqs{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1.25rem}
+.reqs li{display:flex;gap:1rem;border-bottom:1px solid var(--border);padding-bottom:1.25rem;font-size:.875rem;line-height:1.5rem}
+.chk{margin-top:.125rem;width:1.5rem;height:1.5rem;flex-shrink:0;display:grid;place-items:center;border-radius:999px;background:var(--accent);color:var(--accent-fg)}
+.chk .ic{width:.875rem;height:.875rem}
+.note{margin-top:1.75rem;display:flex;gap:.75rem;border-radius:var(--r);background:var(--muted);padding:1rem;font-size:.75rem;line-height:1.25rem;color:var(--muted-fg)}
+.note .ic{width:1.25rem;height:1.25rem;color:var(--primary)}
+
+/* Location */
+.locsec{position:relative;isolation:isolate;overflow:hidden;padding:6rem 0;color:var(--hero-fg)}
+@media(min-width:640px){.locsec{padding:8rem 0}}
+.locsec>img{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover}
+.locsec::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--location-overlay)}
+.locsec .pin{width:1.75rem;height:1.75rem;color:var(--hero-accent)}
+.locsec .kicker{margin-top:1.5rem;font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.22em;color:var(--hero-muted)}
+.locsec h2{margin-top:1rem;max-width:42rem;font-family:var(--display);font-weight:500;font-size:3rem;line-height:1.05}
+@media(min-width:640px){.locsec h2{font-size:3.75rem}}
+.locsec p.txt{margin-top:1.5rem;max-width:36rem;font-size:1rem;line-height:1.75rem;color:var(--hero-muted)}
+
+/* Contact */
+.contact{display:grid;gap:3rem}
+@media(min-width:1024px){.contact{grid-template-columns:.85fr 1.15fr;gap:5rem}}
+.contact .lead{max-width:28rem;line-height:1.75rem}
+.contact-cta{display:grid;gap:1.5rem;align-content:start}
+.contact-cta .btn{min-height:3rem;background:var(--primary);color:var(--primary-fg);padding:.75rem 1.75rem}
+.contact-cta p{font-size:.875rem;color:var(--muted-fg)}
+
+footer{border-top:1px solid var(--border);background:var(--surface);padding:2rem 0}
+.foot{display:flex;flex-direction:column;gap:1rem;font-size:.875rem;color:var(--muted-fg)}
+.foot b{font-family:var(--display);font-weight:500;font-size:1.125rem;color:var(--fg)}
+@media(min-width:640px){.foot{flex-direction:row;align-items:center;justify-content:space-between}}
+
+/* Lightbox */
+.lb{position:fixed;inset:0;z-index:50;display:none;place-items:center;background:var(--lightbox);padding:.75rem}
+.lb.open{display:grid}
+@media(min-width:640px){.lb{padding:2rem}}
+.lb img{max-height:88vh;max-width:100%;border-radius:calc(var(--r) - 3px);object-fit:contain;box-shadow:var(--shadow-photo)}
+.lb-btn{position:absolute;width:2.75rem;height:2.75rem;display:grid;place-items:center;border-radius:999px;background:var(--ctrl);color:var(--ctrl-fg)}
+.lb-close{right:1rem;top:1rem}.lb-close .ic{width:1.25rem;height:1.25rem}
+.lb-prev,.lb-next{top:50%;transform:translateY(-50%)}
+.lb-prev{left:.75rem}.lb-next{right:.75rem}
+@media(min-width:640px){.lb-prev{left:1.75rem}.lb-next{right:1.75rem}}
+.lb-count{position:absolute;bottom:1rem;border-radius:999px;background:var(--ctrl);color:var(--ctrl-fg);padding:.5rem 1rem;font-size:.75rem}
+
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap hbar">
+    <a href="#inicio" class="brand" aria-label="Jungle Studio, inicio">
+      <span class="brand-mark"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-trees" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" /> <path d="M7 16v6" /> <path d="M13 19v3" /> <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /> </svg></span>
+      <span class="brand-name">Jungle Studio <small>El Pitillal</small></span>
+    </a>
+    <nav class="nav" aria-label="Navegación principal">
+      <a href="#espacio">El espacio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#detalles">Detalles</a>
+      <a href="https://wa.me/523222128950?text=Hola,%20me%20interesa%20el%20estudio%20en%20El%20Pitillal" target="_blank" rel="noopener noreferrer" class="btn">Agendar visita</a>
+    </nav>
+    <button type="button" class="menu-btn" id="menuBtn" aria-label="Abrir menú" aria-expanded="false" aria-controls="mnav">
+      <span class="i-menu"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <line x1="4" x2="20" y1="12" y2="12" /> <line x1="4" x2="20" y1="6" y2="6" /> <line x1="4" x2="20" y1="18" y2="18" /> </svg></span><span class="i-x"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg></span>
+    </button>
+  </div>
+  <nav class="mnav" id="mnav" aria-label="Navegación móvil">
+    <a href="#espacio">El espacio</a>
+    <a href="#galeria">Galería</a>
+    <a href="#detalles">Detalles</a>
+    <a href="https://wa.me/523222128950?text=Hola,%20me%20interesa%20el%20estudio%20en%20El%20Pitillal" target="_blank" rel="noopener noreferrer">Agendar visita</a>
+  </nav>
+</header>
+
+<main>
+<section id="inicio" class="hero">
+  <img src="terraza-portada.jpg" alt="Terraza de Jungle Studio rodeada de vegetación" fetchpriority="high">
+  <div class="wrap hero-in">
+    <div class="loc"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /> <circle cx="12" cy="10" r="3" /> </svg> El Pitillal · Puerto Vallarta</div>
+    <h1>Tu estudio bohemio con <em>terraza privada</em> en El Pitillal</h1>
+    <div class="hero-row">
+      <p>Un espacio tranquilo, con mucha luz natural y áreas verdes, a minutos del centro de Puerto Vallarta.</p>
+      <a href="https://wa.me/523222128950?text=Hola,%20me%20interesa%20el%20estudio%20en%20El%20Pitillal" target="_blank" rel="noopener noreferrer" class="btn">Agendar visita <svg aria-hidden="true" focusable="false" class="ic lucide lucide-message-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /> </svg></a>
+    </div>
+  </div>
+</section>
+
+<section id="espacio" class="sec surface">
+  <div class="wrap space-grid">
+    <div>
+      <p class="eyebrow">Un espacio con alma</p>
+      <h2 class="h2" style="max-width:36rem">Un refugio bohemio y rústico con mucho encanto.</h2>
+      <p class="lead">Diseñado para quienes valoran la calma, la independencia y una conexión cotidiana con la naturaleza. Un estudio amueblado, luminoso y funcional para sentirte en casa desde el primer día.</p>
+      <div class="price-inline"><b>$7,000</b><span>MXN / mes</span></div>
+    </div>
+    <div class="feats"><article class="feat"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-bed-double" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8" /> <path d="M4 10V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4" /> <path d="M12 4v6" /> <path d="M2 18h20" /> </svg><h3>Descanso</h3><p>Cama matrimonial, clóset, aire acondicionado y ventilador de techo.</p></article><article class="feat"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-refrigerator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 6a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6Z" /> <path d="M5 10h14" /> <path d="M15 7v6" /> </svg><h3>Cocina</h3><p>Parrilla, frigobar y servicio completo para cuatro personas.</p></article><article class="feat"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-droplets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" /> <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" /> </svg><h3>Baño dividido</h3><p>WC y lavamanos separados de la regadera con calentador eléctrico instantáneo.</p></article><article class="feat"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-trees" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" /> <path d="M7 16v6" /> <path d="M13 19v3" /> <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /> </svg><h3>Vida exterior</h3><p>Terraza techada con áreas verdes y espacios para leer o descansar.</p></article></div>
+  </div>
+</section>
+
+<section id="galeria" class="sec">
+  <div class="wrap">
+    <div class="gal-head">
+      <div><p class="eyebrow">Conócelo por dentro</p><h2 class="h2">Cada rincón, <em>a tu ritmo.</em></h2></div>
+      <p>Explora las áreas interiores y la terraza. Toca cualquier foto para verla completa.</p>
+    </div>
+    <div class="gallery"><button type="button" class="tile big" data-i="0" aria-label="Ampliar foto: Terraza techada entre plantas con área de descanso"><img src="terraza-portada.jpg" alt="Terraza techada entre plantas con área de descanso" loading="eager" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile wide" data-i="1" aria-label="Ampliar foto: Habitación amueblada con cama y espejo entre plantas"><img src="habitacion-cama.jpg" alt="Habitación amueblada con cama y espejo entre plantas" loading="eager" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile wide" data-i="2" aria-label="Ampliar foto: Terraza con sillas artesanales de colores y vista a la montaña"><img src="terraza-sillas.jpg" alt="Terraza con sillas artesanales de colores y vista a la montaña" loading="eager" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="3" aria-label="Ampliar foto: Cocina equipada con barra, frigobar y ventilador"><img src="cocina-barra.jpg" alt="Cocina equipada con barra, frigobar y ventilador" loading="eager" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="4" aria-label="Ampliar foto: Regadera amplia con calentador eléctrico instantáneo"><img src="regadera.jpg" alt="Regadera amplia con calentador eléctrico instantáneo" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="5" aria-label="Ampliar foto: Área de lectura y descanso rodeada de plantas"><img src="terraza-descanso.jpg" alt="Área de lectura y descanso rodeada de plantas" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="6" aria-label="Ampliar foto: Habitación luminosa con cama, mesa y vegetación"><img src="habitacion-entrada.jpg" alt="Habitación luminosa con cama, mesa y vegetación" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="7" aria-label="Ampliar foto: Cocina equipada con fregadero y parrilla"><img src="cocina-equipada.jpg" alt="Cocina equipada con fregadero y parrilla" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="8" aria-label="Ampliar foto: Terraza con sillas de colores y vista verde"><img src="terraza-panorama.jpg" alt="Terraza con sillas de colores y vista verde" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="9" aria-label="Ampliar foto: Espacio privado de sanitario y lavamanos"><img src="sanitario.jpg" alt="Espacio privado de sanitario y lavamanos" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="10" aria-label="Ampliar foto: Vista frontal de cocina con barra"><img src="cocina-frontal.jpg" alt="Vista frontal de cocina con barra" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile wide" data-i="11" aria-label="Ampliar foto: Cocina con parrilla y amplias superficies"><img src="cocina-angulo.jpg" alt="Cocina con parrilla y amplias superficies" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="12" aria-label="Ampliar foto: Acceso a la terraza por pasillo cubierto"><img src="pasillo-terraza.jpg" alt="Acceso a la terraza por pasillo cubierto" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="13" aria-label="Ampliar foto: Jardín en terraza bajo techo"><img src="terraza-jardin.jpg" alt="Jardín en terraza bajo techo" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button><button type="button" class="tile" data-i="14" aria-label="Ampliar foto: Área de cocina y acceso a habitación"><img src="cocina-pasillo.jpg" alt="Área de cocina y acceso a habitación" loading="lazy" decoding="async"><span class="tile-hover"></span><span class="tile-btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-sparkles" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" /> <path d="M20 3v4" /> <path d="M22 5h-4" /> <path d="M4 17v2" /> <path d="M5 18H3" /> </svg></span></button></div>
+  </div>
+</section>
+
+<section class="amen">
+  <div class="wrap">
+    <div style="max-width:42rem"><p class="kicker">Todo lo esencial</p><h2 class="h2">Comodidad sin complicaciones.</h2></div>
+    <div class="ams"><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-droplets" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z" /> <path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97" /> </svg><h3>Todos los servicios incluidos</h3><p>Agua, gas e internet (excepto electricidad)</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-wifi" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 20h.01" /> <path d="M2 8.82a15 15 0 0 1 20 0" /> <path d="M5 12.859a10 10 0 0 1 14 0" /> <path d="M8.5 16.429a5 5 0 0 1 7 0" /> </svg><h3>Internet de alta velocidad</h3><p>Ideal para trabajar a distancia</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-flower-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1" /> <circle cx="12" cy="8" r="2" /> <path d="M12 10v12" /> <path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z" /> <path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z" /> </svg><h3>Áreas comunes</h3><p>Mantenimiento incluido</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-air-vent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M6 12H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2" /> <path d="M6 8h12" /> <path d="M18.3 17.7a2.5 2.5 0 0 1-3.16 3.83 2.53 2.53 0 0 1-1.14-2V12" /> <path d="M6.6 15.6A2 2 0 1 0 10 17v-5" /> </svg><h3>Aire acondicionado</h3><p>Además de ventilador de techo</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-refrigerator" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 6a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6Z" /> <path d="M5 10h14" /> <path d="M15 7v6" /> </svg><h3>Cocina equipada</h3><p>Parrilla, frigobar y servicio</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-trees" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M10 10v.2A3 3 0 0 1 8.9 16v0H5v0h0a3 3 0 0 1-1-5.8V10a3 3 0 0 1 6 0Z" /> <path d="M7 16v6" /> <path d="M13 19v3" /> <path d="M12 19h8.3a1 1 0 0 0 .7-1.7L18 14h.3a1 1 0 0 0 .7-1.7L16 9h.2a1 1 0 0 0 .8-1.7L13 3l-1.4 1.5" /> </svg><h3>Terraza privada</h3><p>Tu rincón verde al aire libre</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-paw-print" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <circle cx="11" cy="4" r="2" /> <circle cx="18" cy="8" r="2" /> <circle cx="20" cy="16" r="2" /> <path d="M9 10a5 5 0 0 1 5 5v3.5a3.5 3.5 0 0 1-6.84 1.045Q6.52 17.48 4.46 16.84A3.5 3.5 0 0 1 5.5 10Z" /> </svg><h3>Pet friendly</h3><p>Se acepta 1 mascota (perro o gato), sujeto a criterio y depósito adicional. Su dueño se hace 100% responsable de su limpieza y cuidado en todas las áreas.</p></article><article class="am"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-camera" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3l-2.5-3z" /> <circle cx="12" cy="13" r="3" /> </svg><h3>Cámara de seguridad</h3><p>En tu entrada, con acceso solo para ti</p></article></div>
+  </div>
+</section>
+
+<section id="detalles" class="sec surface">
+  <div class="wrap">
+    <div class="details">
+      <div class="d-left">
+        <div><p class="eyebrow">Renta mensual</p><p class="big-price">$7,000</p><p class="small-muted">pesos mexicanos al mes</p></div>
+        <div class="incl"><p>Todos los servicios incluidos (excepto electricidad)</p><ul><li>Agua</li><li>Gas</li><li>Internet de alta velocidad</li><li>Mantenimiento de áreas comunes</li></ul></div>
+      </div>
+      <div class="d-right">
+        <p class="eyebrow">Requisitos de arrendamiento</p>
+        <h2 class="h2">Claro desde el principio.</h2>
+        <ul class="reqs"><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>2 meses de depósito en garantía, por tratarse de un espacio amueblado.</li><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>1 mes de renta adelantada.</li><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>Comprobante de ingresos.</li><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>Referencias personales o laborales.</li><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>Máximo 2 personas.</li><li><span class="chk"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 6 9 17l-5-5" /> </svg></span>Contrato mínimo de 6 meses.</li></ul>
+        <div class="note"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-shield-check" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z" /> <path d="m9 12 2 2 4-4" /> </svg>La dirección exacta se comparte únicamente al confirmar una visita.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="locsec">
+  <img src="terraza-sillas.jpg" alt="Vista desde la terraza de Jungle Studio en El Pitillal" loading="lazy">
+  <div class="wrap">
+    <span class="pin"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-map-pin" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" /> <circle cx="12" cy="10" r="3" /> </svg></span>
+    <p class="kicker">Ubicación</p>
+    <h2>El Pitillal, Puerto Vallarta</h2>
+    <p class="txt">Vive en un barrio auténtico, seguro y bien conectado. A solo 3 calles encontrarás el mercado local de alimentos frescos y el mercado de mariscos. También hay centros comerciales, hospitales y escuelas cercanas. A 4 cuadras tienes acceso al río, ideal para caminar o relajarte, y justo al lado del edificio hay un gimnasio. Todo lo que necesitas está a la mano.</p>
+  </div>
+</section>
+
+<section id="contacto" class="sec">
+  <div class="wrap contact">
+    <div><p class="eyebrow">Ven a conocerlo</p><h2 class="h2">¿Te imaginas viviendo aquí?</h2><p class="lead">Interesados enviar mensaje para agendar cita. No se comparte la dirección exacta por seguridad.</p></div>
+    <div class="contact-cta">
+      <a href="https://wa.me/523222128950?text=Hola,%20me%20interesa%20el%20estudio%20en%20El%20Pitillal" target="_blank" rel="noopener noreferrer" class="btn"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-message-circle" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" /> </svg> Contactar por WhatsApp</a>
+      <p>Te responderé por WhatsApp para agendar una visita.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap foot"><b>Jungle Studio El Pitillal</b><span>Un rincón verde en Puerto Vallarta.</span></div>
+</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Visor de fotografías">
+  <img id="lbImg" src="" alt="">
+  <button type="button" class="lb-btn lb-close" id="lbClose" aria-label="Cerrar fotografía"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-x" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M18 6 6 18" /> <path d="m6 6 12 12" /> </svg></button>
+  <button type="button" class="lb-btn lb-prev" id="lbPrev" aria-label="Fotografía anterior"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-chevron-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m15 18-6-6 6-6" /> </svg></button>
+  <button type="button" class="lb-btn lb-next" id="lbNext" aria-label="Fotografía siguiente"><svg aria-hidden="true" focusable="false" class="ic lucide lucide-chevron-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="m9 18 6-6-6-6" /> </svg></button>
+  <span class="lb-count" id="lbCount"></span>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),mnav=document.getElementById('mnav');
+  btn.addEventListener('click',function(){var o=btn.getAttribute('aria-expanded')!=='true';btn.setAttribute('aria-expanded',o);btn.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú');mnav.classList.toggle('open',o);});
+  mnav.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){btn.setAttribute('aria-expanded','false');mnav.classList.remove('open');});});
+
+  var photos=[["terraza-portada.jpg","Terraza techada entre plantas con área de descanso"],["habitacion-cama.jpg","Habitación amueblada con cama y espejo entre plantas"],["terraza-sillas.jpg","Terraza con sillas artesanales de colores y vista a la montaña"],["cocina-barra.jpg","Cocina equipada con barra, frigobar y ventilador"],["regadera.jpg","Regadera amplia con calentador eléctrico instantáneo"],["terraza-descanso.jpg","Área de lectura y descanso rodeada de plantas"],["habitacion-entrada.jpg","Habitación luminosa con cama, mesa y vegetación"],["cocina-equipada.jpg","Cocina equipada con fregadero y parrilla"],["terraza-panorama.jpg","Terraza con sillas de colores y vista verde"],["sanitario.jpg","Espacio privado de sanitario y lavamanos"],["cocina-frontal.jpg","Vista frontal de cocina con barra"],["cocina-angulo.jpg","Cocina con parrilla y amplias superficies"],["pasillo-terraza.jpg","Acceso a la terraza por pasillo cubierto"],["terraza-jardin.jpg","Jardín en terraza bajo techo"],["cocina-pasillo.jpg","Área de cocina y acceso a habitación"]],cur=-1,last=null;
+  var lb=document.getElementById('lb'),img=document.getElementById('lbImg'),count=document.getElementById('lbCount');
+  function show(i){cur=(i+photos.length)%photos.length;img.src=photos[cur][0];img.alt=photos[cur][1];count.textContent=(cur+1)+' / '+photos.length;}
+  function open(i){last=document.activeElement;show(i);lb.classList.add('open');document.body.style.overflow='hidden';document.getElementById('lbClose').focus();}
+  function close(){lb.classList.remove('open');document.body.style.overflow='';cur=-1;if(last)last.focus();}
+  document.querySelectorAll('.tile').forEach(function(t){t.addEventListener('click',function(){open(+t.dataset.i);});});
+  lb.addEventListener('click',close);
+  img.addEventListener('click',function(e){e.stopPropagation();});
+  document.getElementById('lbClose').addEventListener('click',function(e){e.stopPropagation();close();});
+  document.getElementById('lbPrev').addEventListener('click',function(e){e.stopPropagation();show(cur-1);});
+  document.getElementById('lbNext').addEventListener('click',function(e){e.stopPropagation();show(cur+1);});
+  document.addEventListener('keydown',function(e){if(cur<0)return;if(e.key==='Escape')close();if(e.key==='ArrowRight')show(cur+1);if(e.key==='ArrowLeft')show(cur-1);});
+})();
+</script>
+</body>
+</html>
